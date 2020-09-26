@@ -2,11 +2,11 @@
 
 # ====== Variables =============================
 
-gaps_top="4"
-gaps_bottom="24"
-gaps_left="4"
-gaps_right="4"
-gaps_inner="4"
+gaps_top="0"
+gaps_bottom="0"
+gaps_left="0"
+gaps_right="0"
+gaps_inner="0"
 
 normal_border_color="010101"
 focused_border_color="808080"
@@ -22,7 +22,7 @@ yabai -m config left_padding                "${gaps_left}"
 yabai -m config right_padding               "${gaps_right}"
 yabai -m config window_gap                  "${gaps_inner}"
 
-yabai -m config mouse_follows_focus         off
+yabai -m config mouse_follows_focus         on
 yabai -m config focus_follows_mouse         off
 
 yabai -m config mouse_modifier              fn
@@ -60,3 +60,11 @@ yabai -m rule --add label="mpv" app="^mpv$" manage=off
 yabai -m rule --add label="The Unarchiver" app="^The Unarchiver$" manage=off
 yabai -m rule --add label="Transmission" app="^Transmission$" manage=off
 yabai -m rule --add label="VirtualBox" app="^VirtualBox$" manage=off
+#yabai -m rule --add label="Python" app="^Python$" manage=off
+ 
+yabai -m config status_bar                   on
+yabai -m config status_bar_text_font         "FuraCode Nerd Font Mono:Bold:16.0"
+yabai -m config status_bar_icon_font         "FuraCode Nerd Font Mono:Retina:16.0"
+yabai -m config status_bar_background_color  0xff202020
+yabai -m config status_bar_foreground_color  0xffa8a8a8
+yabai -m config status_bar_space_icon_strip  I II III IV V VI VII VIII IX
