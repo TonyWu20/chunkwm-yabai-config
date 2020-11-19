@@ -62,9 +62,4 @@ yabai -m rule --add label="Transmission" app="^Transmission$" manage=off
 yabai -m rule --add label="VirtualBox" app="^VirtualBox$" manage=off
 #yabai -m rule --add label="Python" app="^Python$" manage=off
  
-yabai -m config status_bar                   on
-yabai -m config status_bar_text_font         "FuraCode Nerd Font Mono:Bold:16.0"
-yabai -m config status_bar_icon_font         "FuraCode Nerd Font Mono:Retina:16.0"
-yabai -m config status_bar_background_color  0xff202020
-yabai -m config status_bar_foreground_color  0xffa8a8a8
-yabai -m config status_bar_space_icon_strip  I II III IV V VI VII VIII IX
+yabai -m config external_bar all:26:0
